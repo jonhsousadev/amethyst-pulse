@@ -1,6 +1,6 @@
 {
-  "name": "amethyst-papyrus",
-  "displayName": "Amethyst Papyrus",
+  "name": "amethyst-pulse",
+  "displayName": "Amethyst pulse",
   "description": "Tema Web Premium: Roxo, Creme e Laranja. Otimizado para reduzir a fadiga visual.",
   "version": "0.0.1",
   "engines": {
@@ -12,9 +12,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Amethyst Papyrus",
+        "label": "Amethyst pulse",
         "uiTheme": "vs-dark",
-        "path": "./themes/Amethyst Papyrus-color-theme.json"
+        "path": "./themes/Amethyst pulse-color-theme.json"
       }
     ]
   }

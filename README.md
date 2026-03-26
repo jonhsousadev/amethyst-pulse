@@ -2,7 +2,7 @@
 
 **Amethyst Pulse** é um tema premium para Visual Studio Code, desenhado para oferecer uma experiência de programação profunda, tecnológica e, acima de tudo, confortável.
 
-Inspirado na clareza das pedras preciosas e no conceito de *High-Contrast Softness*, este tema substitui os contrastes agressivos por uma paleta equilibrada de **Roxo Ametista**, **Laranja Âmbar** e **Creme Papyrus**.
+Inspirado na clareza das pedras preciosas e no conceito de *High-Contrast Softness*, este tema substitui os contrastes agressivos por uma paleta equilibrada de **Roxo Ametista**, **Laranja Âmbar** e **Creme pulse**.
 
 ---
 
