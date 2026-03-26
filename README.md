@@ -59,4 +59,4 @@ Inspirado na clareza das pedras preciosas e no conceito de *High-Contrast Softne
 
 Gostou do tema ou encontrou algum erro de sintaxe? Sinta-se à vontade para abrir uma *Issue* ou enviar um *Pull Request* no GitHub!
 
-**Desenvolvido com ❤️ para a comunidade de developers.**
+**Desenvolvido com muito café para a comunidade de developers.**
