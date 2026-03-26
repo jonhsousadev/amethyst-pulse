@@ -1,0 +1,21 @@
+{
+  "name": "amethyst-papyrus",
+  "displayName": "Amethyst Papyrus",
+  "description": "Tema Web Premium: Roxo, Creme e Laranja. Otimizado para reduzir a fadiga visual.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.110.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Amethyst Papyrus",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Amethyst Papyrus-color-theme.json"
+      }
+    ]
+  }
+}

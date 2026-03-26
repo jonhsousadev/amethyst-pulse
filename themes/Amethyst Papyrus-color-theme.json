@@ -1,0 +1,169 @@
+{
+  "name": "Amethyst Pulse",
+  "type": "dark",
+  "colors": {
+    // --- UI: BARRA DO TOPO (TITLE BAR) ---
+    "titleBar.activeBackground": "#1a1620",
+    "titleBar.activeForeground": "#eee8d5",
+    "titleBar.inactiveBackground": "#1a1620",
+    "titleBar.inactiveForeground": "#6b6080",
+    "titleBar.border": "#312a3d",
+
+    // --- UI: TABS (BARRA DE ABAS) ---
+    "editorGroupHeader.tabsBackground": "#1a1620",
+    "tab.activeBackground": "#1e1a24",
+    "tab.activeForeground": "#eee8d5",
+    "tab.inactiveBackground": "#1a1620",
+    "tab.inactiveForeground": "#6b6080",
+    "tab.activeBorderTop": "#bb9af7",
+    "tab.border": "#1a1620",
+
+    // --- UI: BARRA DE STATUS (RODAPÉ) ---
+    "statusBar.background": "#1a1620",
+    "statusBar.foreground": "#eee8d5",
+    "statusBar.border": "#312a3d",
+    "statusBarItem.hoverBackground": "#282330",
+
+    // --- UI: COMMAND CENTER (PESQUISA NO TOPO) ---
+    "commandCenter.background": "#282330",
+    "commandCenter.border": "#4a3b5c",
+    "commandCenter.foreground": "#eee8d5",
+
+    // --- UI: INPUTS, DROPDOWNS E DEFINIÇÕES ---
+    "input.background": "#282330",
+    "input.foreground": "#eee8d5",
+    "input.border": "#4a3b5c",
+    "input.placeholderForeground": "#6b6080",
+    "dropdown.background": "#282330",
+    "dropdown.border": "#4a3b5c",
+    "dropdown.foreground": "#eee8d5",
+    "settings.headerForeground": "#bb9af7",
+    "settings.modifiedItemIndicator": "#bb9af7",
+
+    // --- UI: BOTÕES E LISTAS (HIERARQUIA DE ROXOS) ---
+    "button.background": "#bb9af7",
+    "button.foreground": "#000000",
+    "button.hoverBackground": "#a370f0",
+    "list.hoverBackground": "#282330",
+    "list.activeSelectionBackground": "#2d2438", 
+    "list.activeSelectionForeground": "#bb9af7",
+    "list.inactiveSelectionBackground": "#231d2b",
+    "list.focusBackground": "#3d334d",
+
+    // --- UI: BARRA LATERAL E ÁRVORE (TREE) ---
+    "sideBar.background": "#1a1620",
+    "sideBar.foreground": "#eee8d5",
+    "sideBarSectionHeader.background": "#1a1620",
+    "sideBarSectionHeader.foreground": "#bb9af7",
+    "tree.indentGuidesStroke": "#4a3b5c",
+
+    // --- UI: ACTIVITY BAR (BARRA DE ÍCONES) ---
+    "activityBar.background": "#1a1620",
+    "activityBar.foreground": "#bb9af7",
+    
+    // --- BADGES (ROXO ELÉTRICO COM FONTE PRETA PARA LEGIBILIDADE) ---
+    "activityBarBadge.background": "#bb9af7",
+    "activityBarBadge.foreground": "#000000",
+    "badge.background": "#bb9af7",
+    "badge.foreground": "#000000",
+    
+    // --- EDITOR GERAL (CONFORTO PARA ASTIGMATISMO) ---
+    "editor.background": "#1e1a24",
+    "editor.foreground": "#eee8d5",
+    "editorCursor.foreground": "#ff9e64",
+    "editor.lineHighlightBackground": "#282330",
+    "editor.selectionBackground": "#4a3b5c80",
+    "editorIndentGuide.activeBackground": "#4a3b5c",
+    "editorLineNumber.activeForeground": "#bb9af7",
+    "editorLineNumber.foreground": "#4a3b5c",
+    "breadcrumb.foreground": "#6b6080",
+    "breadcrumb.activeSelectionForeground": "#eee8d5",
+    "editorLightBulb.foreground": "#ff9e64"
+  },
+  "tokenColors": [
+    {
+      "name": "Estruturas de Controle (if, else, for, while, return)",
+      "scope": [
+        "keyword.control",
+        "keyword.control.conditional",
+        "keyword.control.loop",
+        "keyword.control.flow"
+      ],
+      "settings": { "foreground": "#ff9e64", "fontStyle": "italic bold" }
+    },
+    {
+      "name": "Declarações (const, let, var) - Amethyst",
+      "scope": [
+        "storage.type", 
+        "storage.modifier", 
+        "keyword.declaration.js",
+        "keyword.declaration.ts"
+      ],
+      "settings": { "foreground": "#bb9af7", "fontStyle": "bold" }
+    },
+    {
+      "name": "Propriedades de Objetos e Variáveis CSS",
+      "scope": [
+        "variable.other.property", 
+        "variable.other.object.property",
+        "support.type.property-name.css",
+        "entity.other.attribute-name.variable.css"
+      ],
+      "settings": { "foreground": "#b4f9f8" }
+    },
+    {
+      "name": "Objetos (O Objeto em si) - PERSON.name",
+      "scope": ["variable.other.object", "variable.other.readwrite.alias"],
+      "settings": { "foreground": "#eee8d5" }
+    },
+    {
+      "name": "Invocação de Funções - func()",
+      "scope": ["entity.name.function", "support.function", "variable.function"],
+      "settings": { "foreground": "#7aa2f7", "fontStyle": "italic" }
+    },
+    {
+      "name": "Parâmetros de Funções",
+      "scope": ["variable.parameter"],
+      "settings": { "foreground": "#e0afaf" }
+    },
+    {
+      "name": "Tags HTML/XML",
+      "scope": ["entity.name.tag", "punctuation.definition.tag"],
+      "settings": { "foreground": "#7aa2f7" }
+    },
+    {
+      "name": "Atributos HTML/CSS",
+      "scope": ["entity.other.attribute-name"],
+      "settings": { "foreground": "#bb9af7", "fontStyle": "italic" }
+    },
+    {
+      "name": "Strings e Conteúdo de Listas",
+      "scope": ["string", "markup.list"],
+      "settings": { "foreground": "#ffb48a" }
+    },
+    {
+      "name": "Valores CSS, Constantes e Números",
+      "scope": [
+        "constant.numeric", 
+        "constant.language", 
+        "support.constant.property-value.css",
+        "support.constant.color.w3c-standard-color-name.css",
+        "variable.parameter.url.css"
+      ],
+      "settings": { "foreground": "#ff9e64" }
+    },
+    {
+      "name": "CSS IDs e Classes",
+      "scope": [
+        "entity.other.attribute-name.id",
+        "entity.other.attribute-name.class"
+      ],
+      "settings": { "foreground": "#ff9e64", "fontStyle": "bold" }
+    },
+    {
+      "name": "Comentários (Muted Purple)",
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": { "foreground": "#6b6080", "fontStyle": "italic" }
+    }
+  ]
+}
