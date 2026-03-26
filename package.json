@@ -1,6 +1,6 @@
 {
   "name": "amethyst-pulse",
-  "displayName": "Amethyst pulse",
+  "displayName": "Amethyst Pulse",
   "description": "Tema Web Premium: Roxo, Creme e Laranja. Otimizado para reduzir a fadiga visual.",
   "version": "0.0.1",
   "engines": {
@@ -12,7 +12,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "Amethyst pulse",
+        "label": "Amethyst Pulse",
         "uiTheme": "vs-dark",
         "path": "./themes/Amethyst-Pulse-color-theme.json"
       }

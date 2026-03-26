@@ -4,7 +4,7 @@
 
 * This folder contains all of the files necessary for your color theme extension.
 * `package.json` - this is the manifest file that defines the location of the theme file and specifies the base theme of the theme.
-* `themes/Amethyst pulse-color-theme.json` - the color theme definition file.
+* `themes/Amethyst-Pulse-color-theme.json` - the color theme definition file.
 
 ## Get up and running straight away
 
