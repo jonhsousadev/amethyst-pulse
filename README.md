@@ -17,7 +17,8 @@ Inspirado na clareza das pedras preciosas e no conceito de *High-Contrast Softne
 
 ## 📸 Preview
 
-> <img width="1914" height="1038" alt="image" src="https://github.com/user-attachments/assets/6f69ab05-ba37-474b-a6fa-4db047d67c85" />
+> <img width="1914" height="1038" alt="image" src="https://github.com/user-attachments/assets/219c670b-4a89-47ef-9251-138f94e644a3" />
+
 
 > 
 > *Nota: Para uma melhor experiência, utilize fontes com ligaturas como JetBrains Mono ou Fira Code.*
