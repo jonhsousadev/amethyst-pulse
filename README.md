@@ -17,7 +17,9 @@ Inspired by the clarity of gemstones and the concept of *High-Contrast Softness*
 
 ## 📸 Preview
 
+<!-- 
 > <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/5816f021-32d5-4c83-9a93-07c8e8045715" />
+-->
 
 > 
 > *Note: For the best experience, use fonts with ligatures such as JetBrains Mono or Fira Code.*

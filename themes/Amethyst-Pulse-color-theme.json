@@ -2,14 +2,14 @@
   "name": "Amethyst Pulse",
   "type": "dark",
   "colors": {
-    // --- UI: BARRA DO TOPO (TITLE BAR) ---
+    // --- UI: TITLE BAR ---
     "titleBar.activeBackground": "#1A1620",
     "titleBar.activeForeground": "#EEE8D5",
     "titleBar.inactiveBackground": "#1A1620",
     "titleBar.inactiveForeground": "#6B6080",
     "titleBar.border": "#312A3D",
 
-    // --- UI: TABS (BARRA DE ABAS) ---
+    // --- UI: TABS ---
     "editorGroupHeader.tabsBackground": "#1A1620",
     "tab.activeBackground": "#1E1A24",
     "tab.activeForeground": "#EEE8D5",
@@ -18,18 +18,18 @@
     "tab.activeBorderTop": "#BB9AF7",
     "tab.border": "#1A1620",
 
-    // --- UI: BARRA DE STATUS (RODAPÉ) ---
+    // --- UI: STATUS BAR ---
     "statusBar.background": "#1A1620",
     "statusBar.foreground": "#EEE8D5",
     "statusBar.border": "#312A3D",
     "statusBarItem.hoverBackground": "#282330",
 
-    // --- UI: COMMAND CENTER (PESQUISA NO TOPO) ---
+    // --- UI: COMMAND CENTER ---
     "commandCenter.background": "#282330",
     "commandCenter.border": "#4A3B5C",
     "commandCenter.foreground": "#EEE8D5",
 
-    // --- UI: INPUTS, DROPDOWNS E DEFINIÇÕES ---
+    // --- UI: INPUTS, DROPDOWNS & SETTINGS ---
     "input.background": "#282330",
     "input.foreground": "#EEE8D5",
     "input.border": "#4A3B5C",
@@ -40,7 +40,7 @@
     "settings.headerForeground": "#BB9AF7",
     "settings.modifiedItemIndicator": "#BB9AF7",
 
-    // --- UI: BOTÕES E LISTAS (HIERARQUIA DE ROXOS) ---
+    // --- UI: BUTTONS & LISTS ---
     "button.background": "#BB9AF7",
     "button.foreground": "#000000",
     "button.hoverBackground": "#A370F0",
@@ -49,26 +49,25 @@
     "list.activeSelectionForeground": "#BB9AF7",
     "list.inactiveSelectionBackground": "#231D2B",
     "list.focusBackground": "#3D334D",
-    "list.markar.foreground": "#FFB347",
 
-    // --- UI: BARRA LATERAL E ÁRVORE (TREE) ---
+    // --- UI: SIDEBAR & TREE ---
     "sideBar.background": "#1A1620",
     "sideBar.foreground": "#EEE8D5",
     "sideBarSectionHeader.background": "#1A1620",
     "sideBarSectionHeader.foreground": "#BB9AF7",
     "tree.indentGuidesStroke": "#4A3B5C",
 
-    // --- UI: ACTIVITY BAR (BARRA DE ÍCONES) ---
+    // --- UI: ACTIVITY BAR ---
     "activityBar.background": "#1A1620",
     "activityBar.foreground": "#BB9AF7",
 
-    // --- BADGES (ROXO ELÉTRICO COM FONTE PRETA PARA LEGIBILIDADE) ---
-    "activityBarBadge.background": "#BB9AF7",
+    // --- BADGES ---
+    "activityBarBadge.background": "#FFB347",
     "activityBarBadge.foreground": "#000000",
     "badge.background": "#BB9AF7",
     "badge.foreground": "#000000",
 
-    // --- EDITOR GERAL (CONFORTO PARA ASTIGMATISMO) ---
+    // --- EDITOR ---
     "editor.background": "#1E1A24",
     "editor.foreground": "#EEE8D5",
     "editorCursor.foreground": "#FF9E64",
@@ -104,7 +103,7 @@
   },
   "tokenColors": [
     {
-      "name": "Estruturas de Controle (if, else, for, while, return)",
+      "name": "Control Structures (if, else, for, while, return)",
       "scope": [
         "keyword.control",
         "keyword.control.conditional",
@@ -117,7 +116,7 @@
       }
     },
     {
-      "name": "Declarações (const, let, var) - Amethyst",
+      "name": "Declarations (const, let, var) - Amethyst",
       "scope": [
         "storage.type",
         "storage.modifier",
@@ -130,7 +129,7 @@
       }
     },
     {
-      "name": "Propriedades de Objetos e Variáveis CSS",
+      "name": "Object Properties & CSS Variables",
       "scope": [
         "variable.other.property",
         "variable.other.object.property",
@@ -142,7 +141,7 @@
       }
     },
     {
-      "name": "Objetos (O Objeto em si) - PERSON.name",
+      "name": "Objects - PERSON.name",
       "scope": [
         "variable.other.object",
         "variable.other.readwrite.alias"
@@ -152,7 +151,7 @@
       }
     },
     {
-      "name": "Invocação de Funções - func()",
+      "name": "Function Invocations - func()",
       "scope": [
         "entity.name.function",
         "support.function",
@@ -164,7 +163,7 @@
       }
     },
     {
-      "name": "Parâmetros de Funções",
+      "name": "Function Parameters",
       "scope": [
         "variable.parameter"
       ],
@@ -173,7 +172,7 @@
       }
     },
     {
-      "name": "Tags HTML/XML",
+      "name": "HTML/XML Tags",
       "scope": [
         "entity.name.tag",
         "punctuation.definition.tag"
@@ -183,7 +182,7 @@
       }
     },
     {
-      "name": "Atributos HTML/CSS",
+      "name": "HTML/CSS Attributes",
       "scope": [
         "entity.other.attribute-name"
       ],
@@ -193,17 +192,17 @@
       }
     },
     {
-      "name": "Strings e Conteúdo de Listas",
+      "name": "Strings & List Content",
       "scope": [
         "string",
         "markup.list"
       ],
       "settings": {
-        "foreground": "#FFB347"
+        "foreground": "#FFB48A"
       }
     },
     {
-      "name": "Valores CSS, Constantes e Números",
+      "name": "CSS Values, Constants & Numbers",
       "scope": [
         "constant.numeric",
         "constant.language",
@@ -216,7 +215,7 @@
       }
     },
     {
-      "name": "CSS IDs e Classes",
+      "name": "CSS IDs & Classes",
       "scope": [
         "entity.other.attribute-name.id",
         "entity.other.attribute-name.class"
@@ -227,7 +226,29 @@
       }
     },
     {
-      "name": "Comentários (Muted Purple)",
+      "name": "JSON Keys",
+      "scope": [
+        "support.type.property-name.json",
+        "meta.mapping.key.json"
+      ],
+      "settings": {
+        "foreground": "#B4F9F8",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "JSON Values",
+      "scope": [
+        "string.json",
+        "constant.numeric.json",
+        "constant.language.json"
+      ],
+      "settings": {
+        "foreground": "#FFB48A"
+      }
+    },
+    {
+      "name": "Comments (Muted Purple)",
       "scope": [
         "comment",
         "punctuation.definition.comment"

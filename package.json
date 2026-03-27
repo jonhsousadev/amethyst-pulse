@@ -1,8 +1,8 @@
 {
   "name": "amethyst-pulse",
   "displayName": "Amethyst Pulse",
-  "description": "Um tema dark elegante em tons de roxo, creme e laranja, otimizado para utilizadores com astigmatismo.",
-  "version": "1.0.2",
+  "description": "An elegant dark theme in purple, cream and orange tones, optimized for users with astigmatism.",
+  "version": "1.0.4",
   "publisher": "JonhSousa",
   "engines": {
     "vscode": "^1.50.0"
