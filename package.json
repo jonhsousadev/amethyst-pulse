@@ -1,13 +1,21 @@
 {
   "name": "amethyst-pulse",
   "displayName": "Amethyst Pulse",
-  "description": "Tema Web Premium: Roxo, Creme e Laranja. Otimizado para reduzir a fadiga visual.",
-  "version": "0.0.1",
+  "description": "Um tema dark elegante em tons de roxo, creme e laranja, otimizado para utilizadores com astigmatismo.",
+  "version": "1.0.2",
+  "publisher": "JonhSousa",
   "engines": {
-    "vscode": "^1.110.0"
+    "vscode": "^1.50.0"
   },
   "categories": [
     "Themes"
+  ],
+  "keywords": [
+    "purple",
+    "dark",
+    "astigmatism",
+    "amethyst",
+    "soft contrast"
   ],
   "contributes": {
     "themes": [
@@ -17,5 +25,10 @@
         "path": "./themes/Amethyst-Pulse-color-theme.json"
       }
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JonhSousa/amethyst-pulse.git"
+  },
+  "icon": "icon.png"
 }

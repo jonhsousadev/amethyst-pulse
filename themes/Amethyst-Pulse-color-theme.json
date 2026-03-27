@@ -49,6 +49,7 @@
     "list.activeSelectionForeground": "#BB9AF7",
     "list.inactiveSelectionBackground": "#231D2B",
     "list.focusBackground": "#3D334D",
+    "list.markar.foreground": "#FFB347",
 
     // --- UI: BARRA LATERAL E ÁRVORE (TREE) ---
     "sideBar.background": "#1A1620",
@@ -198,7 +199,7 @@
         "markup.list"
       ],
       "settings": {
-        "foreground": "#FFB48A"
+        "foreground": "#FFB347"
       }
     },
     {

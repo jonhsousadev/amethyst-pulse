@@ -1,0 +1,78 @@
+{
+    "manifestVersion": 1,
+    "id": "amethyst-pulse",
+    "version": "1.0.0",
+    "name": "Amethyst Pulse",
+    "publisher": "JonhSousa",
+    "extensionContext": {
+        "context": "Visual Studio Code"
+    },
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "categories": [
+        "Other"
+    ],
+    "tags": [
+        "purple",
+        "dark",
+        "astigmatism",
+        "amethyst",
+        "accessible"
+    ],
+    "public": true,
+    "displayName": "Amethyst Pulse",
+    "description": "A refined dark theme in amethyst purple and amber tones, optimized for visual comfort and accessibility.",
+    "galleryFlags": [
+        "Public"
+    ],
+    "icons": {
+        "default": "icon.png"
+    },
+    "links": {
+        "getstarted": {
+            "uri": "https://github.com/JonhSousa/amethyst-pulse"
+        },
+        "repository": {
+            "uri": "https://github.com/JonhSousa/amethyst-pulse"
+        },
+        "support": {
+            "uri": "https://github.com/JonhSousa/amethyst-pulse/issues"
+        }
+    },
+    "branding": {
+        "color": "#1e1a24",
+        "theme": "dark"
+    },
+    "content": {
+        "details": {
+            "path": "README.md"
+        },
+        "license": {
+            "path": "LICENSE"
+        }
+    },
+    "contributions": [
+        {
+            "id": "amethyst-pulse-theme",
+            "type": "Microsoft.VisualStudio.Code.Theme",
+            "properties": {
+                "label": "Amethyst Pulse",
+                "uiTheme": "vs-dark",
+                "path": "themes/Amethyst-Pulse-color-theme.json"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "themes/Amethyst-Pulse-color-theme.json",
+            "addressable": true
+        },
+        {
+            "path": "icon.png",
+            "addressable": true
+        }
+    ]
+}
