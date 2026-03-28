@@ -7,7 +7,7 @@
     "titleBar.activeForeground": "#EEE8D5",
     "titleBar.inactiveBackground": "#1A1620",
     "titleBar.inactiveForeground": "#6B6080",
-    "titleBar.border": "#312A3D",
+    "titleBar.border": "#2D283A",
 
     // --- UI: TABS ---
     "editorGroupHeader.tabsBackground": "#1A1620",
@@ -16,7 +16,7 @@
     "tab.inactiveBackground": "#1A1620",
     "tab.inactiveForeground": "#6B6080",
     "tab.activeBorderTop": "#BB9AF7",
-    "tab.border": "#1A1620",
+    "tab.border": "#2D283A",
 
     // --- UI: STATUS BAR ---
     "statusBar.background": "#1A1620",
@@ -53,6 +53,7 @@
     // --- UI: SIDEBAR & TREE ---
     "sideBar.background": "#1A1620",
     "sideBar.foreground": "#EEE8D5",
+    "sideBar.border": "#2D283A",
     "sideBarSectionHeader.background": "#1A1620",
     "sideBarSectionHeader.foreground": "#BB9AF7",
     "tree.indentGuidesStroke": "#4A3B5C",
@@ -60,6 +61,7 @@
     // --- UI: ACTIVITY BAR ---
     "activityBar.background": "#1A1620",
     "activityBar.foreground": "#BB9AF7",
+    "activityBar.border": "#2D283A",
 
     // --- BADGES ---
     "activityBarBadge.background": "#FFB347",
@@ -79,6 +81,15 @@
     "breadcrumb.foreground": "#6B6080",
     "breadcrumb.activeSelectionForeground": "#EEE8D5",
     "editorLightBulb.foreground": "#FF9E64",
+    "minimap.border": "#2D283A",
+
+    // --- EDITOR GROUPS & PANELS ---
+    "editorGroup.border": "#2D283A",
+    "editorGroupHeader.border": "#2D283A",
+    "editorGroup.dropBackground": "#2D283A80",
+    "panel.border": "#2D283A",
+    "panel.section.border": "#2D283A",
+    "panel.section.header.background": "#1A1620",
 
     // --- TERMINAL ---
     "terminal.background": "#1E1A24",
@@ -134,10 +145,13 @@
         "variable.other.property",
         "variable.other.object.property",
         "support.type.property-name.css",
-        "entity.other.attribute-name.variable.css"
+        "entity.other.attribute-name.variable.css",
+        "meta.property.object.js",
+        "variable.other.property.js"
       ],
       "settings": {
-        "foreground": "#B4F9F8"
+        "foreground": "#B4F9F8",
+        "fontStyle": "bold"
       }
     },
     {
@@ -192,13 +206,12 @@
       }
     },
     {
-      "name": "Strings & List Content",
+      "name": "Strings",
       "scope": [
-        "string",
-        "markup.list"
+        "string"
       ],
       "settings": {
-        "foreground": "#FFB48A"
+        "foreground": "#FF9E64"
       }
     },
     {
@@ -252,6 +265,103 @@
       "scope": [
         "comment",
         "punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#6B6080",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Markdown - Headings (Purple)",
+      "scope": [
+        "markup.heading",
+        "markup.heading.markdown",
+        "markup.heading.marker"
+      ],
+      "settings": {
+        "foreground": "#BB9AF7",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown - Heading Punctuation (Dark Blue)",
+      "scope": [
+        "punctuation.definition.heading"
+      ],
+      "settings": {
+        "foreground": "#4A3B5C"
+      }
+    },
+    {
+      "name": "Markdown - Bold Text (Blue)",
+      "scope": [
+        "markup.bold",
+        "markup.bold.markdown"
+      ],
+      "settings": {
+        "foreground": "#7AA2F7",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown - Italic Text (Orange)",
+      "scope": [
+        "markup.italic",
+        "markup.italic.markdown"
+      ],
+      "settings": {
+        "foreground": "#FF9E64",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Markdown - List Markers & Numbers (Dark Blue)",
+      "scope": [
+        "markup.list.bullet",
+        "markup.list.markdown",
+        "punctuation.definition.list"
+      ],
+      "settings": {
+        "foreground": "#4A3B5C",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown - List Content (Cream)",
+      "scope": [
+        "markup.list"
+      ],
+      "settings": {
+        "foreground": "#EEE8D5"
+      }
+    },
+    {
+      "name": "Markdown - Links & URLs",
+      "scope": [
+        "markup.underline.link",
+        "markup.link",
+        "string.link"
+      ],
+      "settings": {
+        "foreground": "#B4F9F8",
+        "fontStyle": "underline"
+      }
+    },
+    {
+      "name": "Markdown - Inline Code & Code Blocks",
+      "scope": [
+        "markup.inline.raw",
+        "markup.fenced_code.block"
+      ],
+      "settings": {
+        "foreground": "#9ECE6A"
+      }
+    },
+    {
+      "name": "Markdown - Blockquote & Horizontal Rule",
+      "scope": [
+        "markup.quote",
+        "markup.other"
       ],
       "settings": {
         "foreground": "#6B6080",

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amethyst Pulse | Visual Studio Code Theme</title>
+    <meta name="description" content="An elegant dark theme for Visual Studio Code in purple, cream and orange tones, optimized for users with astigmatism. Reduces eye strain by 40%.">
+    <meta name="keywords" content="VS Code theme, dark theme, purple theme, astigmatism, accessibility, developer tools, Amethyst Pulse">
+    <meta name="author" content="Jonh Sousa">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jonhsousadev.github.io/amethyst-pulse/">
+    <meta name="theme-color" content="#1e1a24">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jonhsousadev.github.io/amethyst-pulse/">
+    <meta property="og:title" content="Amethyst Pulse | Visual Studio Code Theme">
+    <meta property="og:description" content="An elegant dark theme in purple, cream and orange tones, optimized for users with astigmatism. Reduces eye strain by 40%.">
+    <meta property="og:image" content="https://jonhsousadev.github.io/amethyst-pulse/og-image.png">
+    <meta property="og:locale" content="pt_BR">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Amethyst Pulse | Visual Studio Code Theme">
+    <meta name="twitter:description" content="An elegant dark theme optimized for users with astigmatism. Reduces eye strain by 40%.">
+    <meta name="twitter:image" content="https://jonhsousadev.github.io/amethyst-pulse/og-image.png">
+
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="apple-touch-icon" href="./icon.png">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Amethyst Pulse",
+        "description": "An elegant dark theme for Visual Studio Code optimized for users with astigmatism.",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "VS Code",
+        "author": {
+            "@type": "Person",
+            "name": "Jonh Sousa"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --bg-editor: #1e1a24;
+            --bg-sidebar: #1a1620;
+            --bg-activity: #16131a;
+            --bg-tabs: #1a1620;
+            --fg-cream: #eee8d5;
+            --kw-purple: #bb9af7;
+            --logic-amber: #ff9e64;
+            --fn-blue: #7aa2f7;
+            --var-cyan: #b4f9f8;
+            --str-orange: #ffb48a;
+            --text-muted: #6b6080;
+            --border: #312a3d;
+            --tab-inactive: #1a1620;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg-editor);
+            color: var(--fg-cream);
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+
+        /* BARRA DE ATIVIDADES (ACTIVITY BAR) */
+        .activity-bar {
+            width: 50px;
+            background: var(--bg-activity);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 15px;
+            border-right: 1px solid var(--border);
+            gap: 20px;
+            z-index: 100;
+        }
+
+        .activity-item { 
+            color: var(--text-muted); 
+            cursor: pointer; 
+            padding: 8px;
+            transition: color 0.2s ease;
+            position: relative;
+        }
+        
+        /* Linha esquerda removida conforme solicitado */
+        .activity-item.active { 
+            color: var(--kw-purple); 
+        }
+
+        .activity-item:hover {
+            color: var(--fg-cream);
+        }
+
+        .badge {
+            position: absolute;
+            top: 2px;
+            right: 0px;
+            background: var(--logic-amber);
+            color: #1e1a24;
+            font-size: 10px;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 1px 4px;
+            min-width: 14px;
+            text-align: center;
+        }
+
+        /* SIDEBAR (EXPLORER) */
+        #sidebar-explorer {
+            width: 260px;
+            background: var(--bg-sidebar);
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid var(--border);
+            transition: width 0.2s ease, opacity 0.2s ease;
+            overflow: hidden;
+        }
+
+        #sidebar-explorer.collapsed {
+            width: 0;
+            border-right: none;
+            opacity: 0;
+        }
+
+        .sidebar-header {
+            padding: 12px 20px;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+
+        .file-item {
+            padding: 6px 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            cursor: pointer;
+            white-space: nowrap;
+            color: var(--text-muted);
+        }
+
+        .file-item:hover { background: #251f2e; color: var(--fg-cream); }
+        .file-item.active { background: #2d2438; color: var(--kw-purple); }
+
+        /* EDITOR AREA */
+        .editor-container { flex: 1; display: flex; flex-direction: column; position: relative; }
+
+        .tabs-bar {
+            height: 35px;
+            background: var(--bg-tabs);
+            display: flex;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .tab {
+            padding: 0 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            color: var(--text-muted);
+            cursor: pointer;
+            border-right: 1px solid var(--border);
+            background: var(--tab-inactive);
+            transition: background 0.2s;
+        }
+
+        .tab.active {
+            background: var(--bg-editor);
+            color: var(--fg-cream);
+            border-top: 1px solid var(--kw-purple);
+        }
+
+        /* VISTAS DE CONTEÚDO */
+        .content-view {
+            flex: 1;
+            overflow-y: auto;
+            display: none;
+        }
+
+        .content-view.active {
+            display: block;
+        }
+
+        .code-view {
+            padding: 30px;
+            font-family: 'Fira Code', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+            counter-reset: line;
+        }
+
+        .line { display: block; position: relative; padding-left: 50px; min-height: 1.6em; }
+        .line::before {
+            counter-increment: line;
+            content: counter(line);
+            position: absolute; left: 0; color: #4a3b5c; width: 35px; text-align: right;
+        }
+
+        /* MARKETPLACE PAGE */
+        .marketplace-view {
+            padding: 60px;
+            max-width: 1000px;
+            margin: 0 auto;
+            animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .ext-header { display: flex; gap: 30px; align-items: flex-start; }
+        .ext-logo {
+            width: 140px;
+            height: 140px;
+            background: linear-gradient(135deg, #2d2438, #1a1620);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--kw-purple);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+
+        .ext-info h1 { font-size: 32px; color: var(--fg-cream); margin-bottom: 5px; }
+        .ext-info .subtitle { color: var(--text-muted); margin-bottom: 20px; font-size: 14px; }
+
+        /* SYNTAX */
+        .c-kw { color: var(--kw-purple); }
+        .c-ctrl { color: var(--logic-amber); }
+        .c-str { color: var(--str-orange); }
+        .c-fn { color: var(--fn-blue); }
+        .c-prop { color: var(--var-cyan); }
+        .c-cm { color: var(--text-muted); }
+
+        /* CTA */
+        .btn-primary {
+            background: var(--kw-purple);
+            color: #16131a;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: filter 0.2s;
+        }
+        .btn-primary:hover { filter: brightness(1.1); }
+
+        .install-card {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--bg-sidebar);
+            border: 1px solid var(--kw-purple);
+            padding: 15px 20px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+            z-index: 200;
+        }
+
+        .hidden { display: none !important; }
+    </style>
+</head>
+<body>
+
+    <div class="activity-bar">
+        <div class="activity-item active" id="act-files" onclick="toggleView('explorer')">
+            <i data-lucide="files"></i>
+        </div>
+        <div class="activity-item" id="act-extensions" onclick="toggleView('extension')">
+            <i data-lucide="blocks"></i>
+            <span class="badge">1</span>
+        </div>
+    </div>
+
+    <div id="sidebar-explorer">
+        <div class="sidebar-header">Explorer</div>
+        <div class="file-item" style="opacity: 0.6"><i data-lucide="chevron-down" size="14"></i> AMETHYST-PULSE</div>
+        <div class="file-item file-nav active" data-id="readme" onclick="selectFile('readme')">
+            <i data-lucide="file-text" size="14" style="color: var(--fn-blue)"></i> README.md
+        </div>
+        <div class="file-item file-nav" data-id="palette" onclick="selectFile('palette')">
+            <i data-lucide="file-json" size="14" style="color: var(--logic-amber)"></i> palette.json
+        </div>
+        <div class="file-item file-nav" data-id="logic" onclick="selectFile('logic')">
+            <i data-lucide="file-code-2" size="14" style="color: var(--kw-purple)"></i> theme.js
+        </div>
+    </div>
+
+    <div class="editor-container">
+        <div class="tabs-bar" id="tabs-container">
+            <!-- Tabs renderizadas via JS -->
+        </div>
+
+        <!-- Vista do Editor de Código -->
+        <div id="view-editor" class="content-view active">
+            <div class="code-view" id="code-display"></div>
+        </div>
+
+        <!-- Vista da Extensão (Marketplace) -->
+        <div id="view-extension" class="content-view">
+            <div class="marketplace-view">
+                <div class="ext-header">
+                    <div class="ext-logo"><img src="./icon.png" alt="icone oficial da extensão"><div>
+                    <div class="ext-info">
+                        <h1>Amethyst Pulse</h1>
+                        <p class="subtitle">Jonh Sousa • Otimizado para Astigmatismo • v1.0.4</p>
+                        <div style="display: flex; gap: 12px;">
+                            <button class="btn-primary">Instalar</button>
+                            <button class="btn-primary" style="background: transparent; border: 1px solid var(--border); color: var(--fg-cream);">Changelog</button>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 40px;">
+                    <h3 style="color: var(--kw-purple); margin-bottom: 15px;">Por que Amethyst?</h3>
+                    <p style="color: var(--text-muted); line-height: 1.8;">
+                        O efeito de "halo" em telas escuras é um desafio real para desenvolvedores com astigmatismo. 
+                        Este tema utiliza tons profundos de ametista para suavizar a transição entre o texto e o fundo, 
+                        eliminando o contraste agressivo do preto absoluto.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="install-card" id="floating-cta">
+        <div>
+            <strong style="color: var(--kw-purple)">Amethyst Pulse</strong>
+            <div style="font-size: 11px; color: var(--text-muted)">Visual Studio Marketplace</div>
+        </div>
+        <button class="btn-primary" style="padding: 6px 14px; font-size: 13px;" onclick="toggleView('extension')">Instalar</button>
+    </div>
+
+    <script>
+        const files = {
+            readme: {
+                name: 'README.md',
+                icon: 'file-text',
+                color: 'var(--fn-blue)',
+                content: `
+                    <span class="line"><span class="c-kw"># Amethyst Pulse</span></span>
+                    <span class="line"><span class="c-cm">// Focado em acessibilidade visual</span></span>
+                    <span class="line">Este tema reduz a fadiga ocular em <span class="c-str">40%</span></span>
+                    <span class="line">comparado aos temas dark padrão.</span>
+                `
+            },
+            palette: {
+                name: 'palette.json',
+                icon: 'file-json',
+                color: 'var(--logic-amber)',
+                content: `
+                    <span class="line">{</span>
+                    <span class="line">&nbsp;&nbsp;<span class="c-prop">"bg"</span>: <span class="c-str">"#1e1a24"</span>,</span>
+                    <span class="line">&nbsp;&nbsp;<span class="c-prop">"accent"</span>: <span class="c-str">"#ff9e64"</span></span>
+                    <span class="line">}</span>
+                `
+            },
+            logic: {
+                name: 'theme.js',
+                icon: 'file-code-2',
+                color: 'var(--kw-purple)',
+                content: `
+                    <span class="line"><span class="c-kw">export const</span> <span class="c-fn">Theme</span> = () => {</span>
+                    <span class="line">&nbsp;&nbsp;<span class="c-ctrl">return</span> <span class="c-str">"Pulse"</span>;</span>
+                    <span class="line">}</span>
+                `
+            }
+        };
+
+        let activeFile = 'readme';
+        let isExtensionOpen = false;
+
+        function toggleView(mode) {
+            const sidebar = document.getElementById('sidebar-explorer');
+            const viewEditor = document.getElementById('view-editor');
+            const viewExt = document.getElementById('view-extension');
+            const cta = document.getElementById('floating-cta');
+            
+            if (mode === 'extension') {
+                isExtensionOpen = true;
+                sidebar.classList.add('collapsed');
+                viewEditor.classList.remove('active');
+                viewExt.classList.add('active');
+                cta.classList.add('hidden');
+                document.getElementById('act-files').classList.remove('active');
+                document.getElementById('act-extensions').classList.add('active');
+            } else {
+                isExtensionOpen = false;
+                sidebar.classList.remove('collapsed');
+                viewEditor.classList.add('active');
+                viewExt.classList.remove('active');
+                cta.classList.remove('hidden');
+                document.getElementById('act-files').classList.add('active');
+                document.getElementById('act-extensions').classList.remove('active');
+            }
+            renderTabs();
+        }
+
+        function selectFile(id) {
+            activeFile = id;
+            toggleView('explorer'); // Volta pro modo editor se clicar num arquivo
+            renderTabs();
+            document.getElementById('code-display').innerHTML = files[id].content;
+            
+            document.querySelectorAll('.file-nav').forEach(el => {
+                el.classList.toggle('active', el.dataset.id === id);
+            });
+        }
+
+        function renderTabs() {
+            const container = document.getElementById('tabs-container');
+            container.innerHTML = '';
+
+            // Renderiza sempre os arquivos abertos
+            Object.keys(files).forEach(id => {
+                const f = files[id];
+                const tab = document.createElement('div');
+                tab.className = `tab ${(!isExtensionOpen && activeFile === id) ? 'active' : ''}`;
+                tab.onclick = () => selectFile(id);
+                tab.innerHTML = `<i data-lucide="${f.icon}" size="14" style="color: ${f.color}"></i> <span>${f.name}</span>`;
+                container.appendChild(tab);
+            });
+
+            // Se a extensão estiver aberta, adiciona a tab dela por último e ativa
+            if (isExtensionOpen) {
+                const extTab = document.createElement('div');
+                extTab.className = 'tab active';
+                extTab.onclick = () => toggleView('extension');
+                extTab.innerHTML = `<i data-lucide="blocks" size="14" style="color: var(--logic-amber)"></i> <span>Extension: Amethyst</span>`;
+                container.appendChild(extTab);
+            }
+
+            if (window.lucide) lucide.createIcons();
+        }
+
+        window.onload = () => {
+            selectFile('readme');
+        };
+    </script>
+</body>
+</html>
