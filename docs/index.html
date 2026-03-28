@@ -237,9 +237,11 @@
             display: flex; align-items: center; justify-content: center;
             color: var(--kw-purple);
             box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            flex-shrink: 0;
         }
 
-        .ext-info h1 { font-size: 32px; color: var(--fg-cream); margin-bottom: 5px; }
+        .ext-info { flex: 1; }
+        .ext-info h1 { font-size: 32px; color: var(--fg-cream); margin-bottom: 5px; display: flex; align-items: center; gap: 15px; }
         .ext-info .subtitle { color: var(--text-muted); margin-bottom: 20px; font-size: 14px; }
 
         /* SYNTAX */
@@ -321,12 +323,12 @@
         <div id="view-extension" class="content-view">
             <div class="marketplace-view">
                 <div class="ext-header">
-                    <div class="ext-logo"><img src="./icon.png" alt="icone oficial da extensão"><div>
+                    <div class="ext-logo"><img src="./icon.png" alt="icone oficial da extensão"></div>
                     <div class="ext-info">
-                        <h1>Amethyst Pulse</h1>
+                        <h1><img src="./icon.png" alt="" style="width: 42px; height: 42px; border-radius: 8px;"> Amethyst Pulse</h1>
                         <p class="subtitle">Jonh Sousa • Otimizado para Astigmatismo • v1.0.4</p>
                         <div style="display: flex; gap: 12px;">
-                            <button class="btn-primary">Instalar</button>
+                            <a class="btn-primary" href="https://marketplace.visualstudio.com/items?itemName=JonhSousa.amethyst-pulse&ssr=false#overview" target="_blank" rel="noopener">Instalar</a>
                             <button class="btn-primary" style="background: transparent; border: 1px solid var(--border); color: var(--fg-cream);">Changelog</button>
                         </div>
                     </div>
@@ -358,10 +360,23 @@
                 icon: 'file-text',
                 color: 'var(--fn-blue)',
                 content: `
-                    <span class="line"><span class="c-kw"># Amethyst Pulse</span></span>
-                    <span class="line"><span class="c-cm">// Focado em acessibilidade visual</span></span>
-                    <span class="line">Este tema reduz a fadiga ocular em <span class="c-str">40%</span></span>
-                    <span class="line">comparado aos temas dark padrão.</span>
+                    <span class="line"><span class="c-head"># Amethyst Pulse</span></span>
+                    <span class="line"></span>
+                    <span class="line"><span class="c-str">## Visão Geral</span></span>
+                    <span class="line">Um tema criado para quem passa horas no VS Code e sofre com a fadiga ocular.</span>
+                    <span class="line">Diferente de outros temas dark, o Amethyst Pulse não utiliza preto puro (<span class="c-kw">#000</span>).</span>
+                    <span class="line"></span>
+                    <span class="line"><span class="c-str">## Otimização para Astigmatismo</span></span>
+                    <span class="line">Pessoas com astigmatismo costumam ver borrões brancos sobre fundos pretos.</span>
+                    <span class="line">Nossa paleta de <span class="c-fn">púrpura profundo</span> reduz esse contraste agressivo,</span>
+                    <span class="line">mantendo a legibilidade perfeita sem cansar a retina.</span>
+                    <span class="line"></span>
+                    <span class="line"><span class="c-str">## Benefícios</span></span>
+                    <span class="line">- Redução de <span class="c-ctrl">40%</span> no cansaço visual.</span>
+                    <span class="line">- Cores semânticas intuitivas (Ametista, Âmbar, Ciano).</span>
+                    <span class="line">- Contraste validado pela norma <span class="c-kw">WCAG 2.1</span>.</span>
+                    <span class="line"></span>
+                    <span class="line"><span class="c-cm">// Digite 'Instalar' para começar a usar.</span></span>
                 `
             },
             palette: {
@@ -370,8 +385,12 @@
                 color: 'var(--logic-amber)',
                 content: `
                     <span class="line">{</span>
-                    <span class="line">&nbsp;&nbsp;<span class="c-prop">"bg"</span>: <span class="c-str">"#1e1a24"</span>,</span>
-                    <span class="line">&nbsp;&nbsp;<span class="c-prop">"accent"</span>: <span class="c-str">"#ff9e64"</span></span>
+                    <span class="line">&nbsp;&nbsp;<span class="c-prop">"name"</span>: <span class="c-str">"Amethyst Pulse"</span>,</span>
+                    <span class="line">&nbsp;&nbsp;<span class="c-prop">"colors"</span>: {</span>
+                    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-prop">"editor.background"</span>: <span class="c-str">"#1e1a24"</span>,</span>
+                    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-prop">"editor.foreground"</span>: <span class="c-str">"#eee8d5"</span>,</span>
+                    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-prop">"syntax.keyword"</span>: <span class="c-str">"#bb9af7"</span></span>
+                    <span class="line">&nbsp;&nbsp;}</span>
                     <span class="line">}</span>
                 `
             },
@@ -380,8 +399,10 @@
                 icon: 'file-code-2',
                 color: 'var(--kw-purple)',
                 content: `
-                    <span class="line"><span class="c-kw">export const</span> <span class="c-fn">Theme</span> = () => {</span>
-                    <span class="line">&nbsp;&nbsp;<span class="c-ctrl">return</span> <span class="c-str">"Pulse"</span>;</span>
+                    <span class="line"><span class="c-kw">const</span> <span class="c-fn">activateTheme</span> = (config) => {</span>
+                    <span class="line">&nbsp;&nbsp;<span class="c-ctrl">if</span> (!config) <span class="c-ctrl">return</span>;</span>
+                    <span class="line">&nbsp;&nbsp;<span class="c-cm">// Aplica suavização de contraste</span></span>
+                    <span class="line">&nbsp;&nbsp;console.<span class="c-fn">log</span>(<span class="c-str">"Amethyst Pulse Active"</span>);</span>
                     <span class="line">}</span>
                 `
             }
