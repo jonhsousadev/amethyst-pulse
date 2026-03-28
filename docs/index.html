@@ -69,7 +69,7 @@
             background-color: var(--bg-editor);
             color: var(--fg-cream);
             font-family: "Segoe UI", Tahoma, sans-serif;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             overflow: hidden;
         }
@@ -85,6 +85,7 @@
             border-right: 1px solid var(--border);
             gap: 20px;
             z-index: 100;
+            height: 100vh;
         }
 
         .activity-item { 
@@ -127,6 +128,8 @@
             border-right: 1px solid var(--border);
             transition: width 0.2s ease, opacity 0.2s ease;
             overflow: hidden;
+            flex-shrink: 0;
+            height: 100vh;
         }
 
         #sidebar-explorer.collapsed {
@@ -167,6 +170,7 @@
             background: var(--bg-tabs);
             display: flex;
             border-bottom: 1px solid var(--border);
+            overflow-x: auto;
         }
 
         .tab {
@@ -220,6 +224,7 @@
             max-width: 1000px;
             margin: 0 auto;
             animation: fadeIn 0.4s ease;
+            color: var(--fg-cream);
         }
 
         @keyframes fadeIn {
@@ -241,8 +246,26 @@
         }
 
         .ext-info { flex: 1; }
-        .ext-info h1 { font-size: 32px; color: var(--fg-cream); margin-bottom: 5px; display: flex; align-items: center; gap: 15px; }
+        .ext-info h1 { font-size: 32px; color: var(--fg-cream); margin-bottom: 5px; }
         .ext-info .subtitle { color: var(--text-muted); margin-bottom: 20px; font-size: 14px; }
+
+        @media (max-width: 600px) {
+            body { overflow: hidden; }
+            .activity-bar, #sidebar-explorer { display: none; }
+            .marketplace-view { padding: 20px; max-width: 90%; margin: 0 auto; }
+            .ext-header { flex-direction: column; align-items: center; text-align: center; gap: 15px; }
+            .ext-logo { width: 80px; height: 80px; }
+            .ext-logo img { width: 55px; height: 55px; }
+            .ext-info h1 { font-size: 24px; color: var(--fg-cream); }
+            .ext-info .subtitle { font-size: 13px; margin-bottom: 15px; color: var(--text-muted); }
+            .ext-info div[style*="display: flex"] { justify-content: center; flex-wrap: wrap; gap: 8px; }
+            .marketplace-view h3 { font-size: 16px; margin-bottom: 10px; color: var(--fg-cream); }
+            .marketplace-view p { font-size: 14px; line-height: 1.6; color: var(--fg-cream); }
+            .btn-primary { padding: 10px 20px; font-size: 14px; }
+            .install-card { bottom: 20px; right: 15px; padding: 12px 15px; gap: 10px; }
+            .tabs-bar { overflow-x: auto; }
+            .tab { padding: 0 8px; font-size: 10px; }
+        }
 
         /* SYNTAX */
         .c-kw { color: var(--kw-purple); }
@@ -325,11 +348,11 @@
                 <div class="ext-header">
                     <div class="ext-logo"><img src="./icon.png" alt="icone oficial da extensão"></div>
                     <div class="ext-info">
-                        <h1><img src="./icon.png" alt="" style="width: 42px; height: 42px; border-radius: 8px;"> Amethyst Pulse</h1>
+                        <h1>Amethyst Pulse</h1>
                         <p class="subtitle">Jonh Sousa • Otimizado para Astigmatismo • v1.0.4</p>
                         <div style="display: flex; gap: 12px;">
                             <a class="btn-primary" href="https://marketplace.visualstudio.com/items?itemName=JonhSousa.amethyst-pulse&ssr=false#overview" target="_blank" rel="noopener">Instalar</a>
-                            <button class="btn-primary" style="background: transparent; border: 1px solid var(--border); color: var(--fg-cream);">Changelog</button>
+                            <!-- <button class="btn-primary" style="background: transparent; border: 1px solid var(--border); color: var(--fg-cream);">Changelog</button> -->
                         </div>
                     </div>
                 </div>
@@ -410,6 +433,7 @@
 
         let activeFile = 'readme';
         let isExtensionOpen = false;
+        let hasOpenedExtension = false;
 
         function toggleView(mode) {
             const sidebar = document.getElementById('sidebar-explorer');
@@ -419,6 +443,7 @@
             
             if (mode === 'extension') {
                 isExtensionOpen = true;
+                hasOpenedExtension = true;
                 sidebar.classList.add('collapsed');
                 viewEditor.classList.remove('active');
                 viewExt.classList.add('active');
@@ -439,9 +464,15 @@
 
         function selectFile(id) {
             activeFile = id;
-            toggleView('explorer'); // Volta pro modo editor se clicar num arquivo
             renderTabs();
             document.getElementById('code-display').innerHTML = files[id].content;
+            
+            if (isExtensionOpen) {
+                document.getElementById('view-editor').classList.add('active');
+                document.getElementById('view-extension').classList.remove('active');
+            } else {
+                toggleView('explorer');
+            }
             
             document.querySelectorAll('.file-nav').forEach(el => {
                 el.classList.toggle('active', el.dataset.id === id);
@@ -452,7 +483,6 @@
             const container = document.getElementById('tabs-container');
             container.innerHTML = '';
 
-            // Renderiza sempre os arquivos abertos
             Object.keys(files).forEach(id => {
                 const f = files[id];
                 const tab = document.createElement('div');
@@ -462,10 +492,9 @@
                 container.appendChild(tab);
             });
 
-            // Se a extensão estiver aberta, adiciona a tab dela por último e ativa
-            if (isExtensionOpen) {
+            if (isExtensionOpen || hasOpenedExtension) {
                 const extTab = document.createElement('div');
-                extTab.className = 'tab active';
+                extTab.className = `tab ${isExtensionOpen ? 'active' : ''}`;
                 extTab.onclick = () => toggleView('extension');
                 extTab.innerHTML = `<i data-lucide="blocks" size="14" style="color: var(--logic-amber)"></i> <span>Extension: Amethyst</span>`;
                 container.appendChild(extTab);
