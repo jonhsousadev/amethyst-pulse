@@ -127,6 +127,154 @@
         "fontStyle": "italic bold"
       }
     },
+    // --- .env files ---
+    {
+      "name": ".env Keys",
+      "scope": [
+        "variable.other.env",
+        "support.type.property-name.env"
+      ],
+      "settings": {
+        "foreground": "#BB9AF7",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": ".env Equal Sign",
+      "scope": [
+        "keyword.operator.assignment.env"
+      ],
+      "settings": {
+        "foreground": "#7AA2F7"
+      }
+    },
+    {
+      "name": ".env Values",
+      "scope": [
+        "string.unquoted.env",
+        "constant.other.env"
+      ],
+      "settings": {
+        "foreground": "#FF9E64"
+      }
+    },
+    {
+      "name": ".env Comments",
+      "scope": [
+        "comment.line.number-sign.env"
+      ],
+      "settings": {
+        "foreground": "#6B6080",
+        "fontStyle": "italic"
+      }
+    },
+    // --- SQL ---
+    {
+      "name": "SQL Keywords",
+      "scope": [
+        "keyword.other.DML.sql",
+        "keyword.other.DDL.sql",
+        "keyword.other.TCL.sql",
+        "keyword.other.DCL.sql",
+        "keyword.control.sql"
+      ],
+      "settings": {
+        "foreground": "#BB9AF7",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "SQL Functions",
+      "scope": [
+        "support.function.sql"
+      ],
+      "settings": {
+        "foreground": "#7AA2F7",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "SQL Strings",
+      "scope": [
+        "string.quoted.single.sql",
+        "string.quoted.double.sql"
+      ],
+      "settings": {
+        "foreground": "#FF9E64"
+      }
+    },
+    {
+      "name": "SQL Numbers",
+      "scope": [
+        "constant.numeric.sql"
+      ],
+      "settings": {
+        "foreground": "#B4F9F8"
+      }
+    },
+    {
+      "name": "SQL Comments",
+      "scope": [
+        "comment.line.double-dash.sql",
+        "comment.block.sql"
+      ],
+      "settings": {
+        "foreground": "#6B6080",
+        "fontStyle": "italic"
+      }
+    },
+    // --- MongoDB ---
+    {
+      "name": "MongoDB Operators",
+      "scope": [
+        "variable.other.mongodb.operator",
+        "support.type.property-name.mongodb"
+      ],
+      "settings": {
+        "foreground": "#BB9AF7",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "MongoDB Functions",
+      "scope": [
+        "support.function.mongodb"
+      ],
+      "settings": {
+        "foreground": "#7AA2F7",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "MongoDB Strings",
+      "scope": [
+        "string.quoted.double.mongodb",
+        "string.quoted.single.mongodb"
+      ],
+      "settings": {
+        "foreground": "#FF9E64"
+      }
+    },
+    {
+      "name": "MongoDB Numbers",
+      "scope": [
+        "constant.numeric.mongodb"
+      ],
+      "settings": {
+        "foreground": "#B4F9F8"
+      }
+    },
+    {
+      "name": "MongoDB Comments",
+      "scope": [
+        "comment.line.double-slash.mongodb",
+        "comment.block.mongodb"
+      ],
+      "settings": {
+        "foreground": "#6B6080",
+        "fontStyle": "italic"
+      }
+    },
     {
       "name": "Declarations (const, let, var) - Amethyst",
       "scope": [
