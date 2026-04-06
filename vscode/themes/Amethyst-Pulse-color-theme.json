@@ -112,6 +112,10 @@
     "terminal.ansiBrightRed": "#F7768E",
     "terminal.ansiBrightWhite": "#EEE8D5",
     "terminal.ansiBrightYellow": "#FF9E64"
+    ,
+    // --- CURRENT SCOPE HIGHLIGHT ---
+    "editor.selectionHighlightBackground": "#3D334D80",
+    "editor.selectionHighlightBorder": "#BB9AF7"
   },
   "tokenColors": [
     {
@@ -125,6 +129,46 @@
       "settings": {
         "foreground": "#FF9E64",
         "fontStyle": "italic bold"
+      }
+    },
+    // --- OPERATORS ---
+    {
+      "name": "Comparison Operators (==, ===, !=, !==, >, <, >=, <=)",
+      "scope": [
+        "keyword.operator.comparison"
+      ],
+      "settings": {
+        "foreground": "#FFB347",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Logical Operators (!, &&, ||)",
+      "scope": [
+        "keyword.operator.logical"
+      ],
+      "settings": {
+        "foreground": "#9ECE6A",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Assignment Operators (=, +=, -=, etc.)",
+      "scope": [
+        "keyword.operator.assignment"
+      ],
+      "settings": {
+        "foreground": "#7AA2F7",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Other Operators",
+      "scope": [
+        "keyword.operator"
+      ],
+      "settings": {
+        "foreground": "#F7768E"
       }
     },
     // --- .env files ---

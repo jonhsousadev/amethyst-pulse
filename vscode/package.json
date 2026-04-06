@@ -2,7 +2,7 @@
   "name": "amethyst-pulse",
   "displayName": "Amethyst Pulse",
   "description": "An elegant dark theme in purple, cream and orange tones, optimized for users with astigmatism.",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "publisher": "JonhSousa",
   "engines": {
     "vscode": "^1.50.0"
