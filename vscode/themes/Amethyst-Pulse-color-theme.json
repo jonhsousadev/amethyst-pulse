@@ -333,6 +333,60 @@
       }
     },
     {
+      "name": "Import / Export / From keywords",
+      "scope": [
+        "keyword.control.import",
+        "keyword.control.export",
+        "keyword.control.from",
+        "keyword.control.as",
+        "keyword.control.default",
+        "keyword.other.import",
+        "keyword.other.export",
+        "keyword.other.from"
+      ],
+      "settings": {
+        "foreground": "#BB9AF7",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Import wildcard (* in import * from)",
+      "scope": [
+        "constant.language.import-export-all",
+        "constant.language.import-export-all.js",
+        "constant.language.import-export-all.ts",
+        "keyword.operator.module",
+        "storage.type.namespace.wildcard"
+      ],
+      "settings": {
+        "foreground": "#F7768E",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Template Literal Interpolation Punctuation (${ and })",
+      "scope": [
+        "punctuation.definition.template-expression.begin",
+        "punctuation.definition.template-expression.end",
+        "punctuation.section.embedded.begin",
+        "punctuation.section.embedded.end"
+      ],
+      "settings": {
+        "foreground": "#F7768E",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Template Literal Interpolated Expression (variable inside ${})",
+      "scope": [
+        "meta.template.expression",
+        "meta.embedded.expression"
+      ],
+      "settings": {
+        "foreground": "#E0AFAF"
+      }
+    },
+    {
       "name": "Object Properties & CSS Variables",
       "scope": [
         "variable.other.property",
