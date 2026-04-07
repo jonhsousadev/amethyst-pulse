@@ -263,7 +263,7 @@
           "boolean": { "color": "#ff9e64" },
           "number": { "color": "#ff9e64" },
 
-          "tag": { "color": "#7aa2f7" },
+          "tag": { "color": "#4ec9b0" },
           "attribute": { "color": "#bb9af7", "font_style": "italic" },
 
           "selector": { "color": "#ff9e64", "font_weight": 700 },
