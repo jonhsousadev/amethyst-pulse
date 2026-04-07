@@ -462,10 +462,19 @@
       }
     },
     {
-      "name": "CSS Values, Constants & Numbers",
+      "name": "Language Constants (null, undefined, true, false)",
+      "scope": [
+        "constant.language"
+      ],
+      "settings": {
+        "foreground": "#BB9AF7",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "CSS Values & Numbers",
       "scope": [
         "constant.numeric",
-        "constant.language",
         "support.constant.property-value.css",
         "support.constant.color.w3c-standard-color-name.css",
         "variable.parameter.url.css"
@@ -500,8 +509,7 @@
       "name": "JSON Values",
       "scope": [
         "string.json",
-        "constant.numeric.json",
-        "constant.language.json"
+        "constant.numeric.json"
       ],
       "settings": {
         "foreground": "#FFB48A"

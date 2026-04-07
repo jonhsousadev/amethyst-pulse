@@ -259,8 +259,8 @@
           "punctuation.special": { "color": "#f7768e" },
           "embedded": { "color": "#e0afaf" },
 
-          "constant": { "color": "#ff9e64", "font_weight": 700 },
-          "boolean": { "color": "#ff9e64" },
+          "constant": { "color": "#bb9af7", "font_weight": 700 },
+          "boolean": { "color": "#bb9af7" },
           "number": { "color": "#ff9e64" },
 
           "tag": { "color": "#4ec9b0" },
