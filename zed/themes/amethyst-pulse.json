@@ -296,7 +296,38 @@
           "title": { "color": "#bb9af7", "font_weight": 700 },
 
           "diff.plus": { "color": "#9ece6a" },
-          "diff.minus": { "color": "#f7768e" }
+          "diff.minus": { "color": "#f7768e" },
+
+          "css.at_rule": { "color": "#bb9af7", "font_weight": 700 },
+          "css.at_keyword": { "color": "#bb9af7", "font_weight": 700 },
+          "css.import": { "color": "#bb9af7", "font_weight": 700 },
+          "css.property": { "color": "#b4f9f8", "font_weight": 700 },
+          "css.value": { "color": "#ff9e64" },
+          "css.selector": { "color": "#ff9e64", "font_weight": 700 },
+          "css.id_selector": { "color": "#ff9e64", "font_weight": 700 },
+          "css.class_selector": { "color": "#ff9e64", "font_weight": 700 },
+          "css.pseudo_class": { "color": "#7aa2f7", "font_style": "italic" },
+          "css.pseudo_element": { "color": "#b4f9f8", "font_style": "italic" },
+          "css.color": { "color": "#ff9e64" },
+
+          "scss.variable": { "color": "#ff9e64", "font_weight": 700 },
+          "scss.mixin": { "color": "#7aa2f7", "font_style": "italic" },
+          "scss.function": { "color": "#7aa2f7", "font_style": "italic" },
+          "scss.interpolation": { "color": "#e0afaf" },
+          "scss.placeholder": { "color": "#ffb347", "font_weight": 700 },
+          "scss.at_rule": { "color": "#bb9af7", "font_weight": 700 },
+          "scss.at_keyword": { "color": "#bb9af7", "font_weight": 700 },
+          "scss.import": { "color": "#bb9af7", "font_weight": 700 },
+          "scss.use": { "color": "#bb9af7", "font_weight": 700 },
+          "scss.forward": { "color": "#bb9af7", "font_weight": 700 },
+          "scss.include": { "color": "#bb9af7", "font_weight": 700 },
+          "scss.extend": { "color": "#bb9af7", "font_weight": 700 },
+          "scss.if": { "color": "#ff9e64", "font_style": "italic", "font_weight": 700 },
+          "scss.else": { "color": "#ff9e64", "font_style": "italic", "font_weight": 700 },
+          "scss.for": { "color": "#ff9e64", "font_style": "italic", "font_weight": 700 },
+          "scss.each": { "color": "#ff9e64", "font_style": "italic", "font_weight": 700 },
+          "scss.while": { "color": "#ff9e64", "font_style": "italic", "font_weight": 700 },
+          "scss.return": { "color": "#ff9e64", "font_style": "italic", "font_weight": 700 }
         }
       }
     }

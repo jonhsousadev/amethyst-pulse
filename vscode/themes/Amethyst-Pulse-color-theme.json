@@ -131,6 +131,155 @@
         "fontStyle": "italic bold"
       }
     },
+    // --- CSS: AT-RULES (@import, @media, @keyframes, @supports) ---
+    {
+      "name": "CSS/SCSS At-Rules (@import, @use, @forward, @media, @keyframes, @supports, @mixin, @include, @extend)",
+      "scope": [
+        "keyword.control.at-rule.import.css",
+        "keyword.control.at-rule.import.scss",
+        "keyword.control.at-rule.use.scss",
+        "keyword.control.at-rule.forward.scss",
+        "keyword.control.at-rule.media.css",
+        "keyword.control.at-rule.media.scss",
+        "keyword.control.at-rule.keyframes.css",
+        "keyword.control.at-rule.keyframes.scss",
+        "keyword.control.at-rule.supports.css",
+        "keyword.control.at-rule.supports.scss",
+        "keyword.control.at-rule.mixin.scss",
+        "keyword.control.at-rule.include.scss",
+        "keyword.control.at-rule.extend.scss",
+        "keyword.control.at-rule.function.scss",
+        "keyword.control.at-rule.css",
+        "punctuation.definition.keyword.css",
+        "punctuation.definition.keyword.scss"
+      ],
+      "settings": {
+        "foreground": "#BB9AF7",
+        "fontStyle": "bold"
+      }
+    },
+    // --- SCSS: FLOW CONTROL (@if, @else, @for, @each, @while, @return) ---
+    {
+      "name": "SCSS Flow Control (@if, @else, @for, @each, @while, @return, @warn, @debug, @error, @content)",
+      "scope": [
+        "keyword.control.if.scss",
+        "keyword.control.else.scss",
+        "keyword.control.for.scss",
+        "keyword.control.each.scss",
+        "keyword.control.while.scss",
+        "keyword.control.return.scss",
+        "keyword.control.warn.scss",
+        "keyword.control.content.scss",
+        "keyword.control.at-rule.if.scss",
+        "keyword.control.at-rule.else.scss",
+        "keyword.control.at-rule.for.scss",
+        "keyword.control.at-rule.each.scss",
+        "keyword.control.at-rule.while.scss",
+        "keyword.control.at-rule.return.scss"
+      ],
+      "settings": {
+        "foreground": "#FF9E64",
+        "fontStyle": "italic bold"
+      }
+    },
+    // --- CSS: PSEUDO-CLASSES & PSEUDO-ELEMENTS ---
+    {
+      "name": "CSS Pseudo-Classes (:hover, :focus, :nth-child, etc.)",
+      "scope": [
+        "entity.other.attribute-name.pseudo-class.css",
+        "entity.other.attribute-name.pseudo-class.scss",
+        "punctuation.definition.entity.css",
+        "punctuation.definition.entity.scss"
+      ],
+      "settings": {
+        "foreground": "#7AA2F7",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "CSS Pseudo-Elements (::before, ::after, etc.)",
+      "scope": [
+        "entity.other.attribute-name.pseudo-element.css",
+        "entity.other.attribute-name.pseudo-element.scss"
+      ],
+      "settings": {
+        "foreground": "#B4F9F8",
+        "fontStyle": "italic"
+      }
+    },
+    // --- CSS: VENDOR PREFIXES ---
+    {
+      "name": "CSS Vendor-Prefixed Properties (-webkit-, -moz-, etc.)",
+      "scope": [
+        "support.type.vendored-property-name.css",
+        "support.type.vendored-property-name.scss"
+      ],
+      "settings": {
+        "foreground": "#B4F9F8"
+      }
+    },
+    // --- SCSS: VARIABLES ---
+    {
+      "name": "SCSS Variables ($variable)",
+      "scope": [
+        "variable.scss",
+        "variable.other.scss",
+        "variable.other.less",
+        "variable.less"
+      ],
+      "settings": {
+        "foreground": "#FF9E64",
+        "fontStyle": "bold"
+      }
+    },
+    // --- SCSS: MIXIN & FUNCTION NAMES ---
+    {
+      "name": "SCSS Mixin & Function Names",
+      "scope": [
+        "entity.name.function.scss",
+        "entity.name.function.less",
+        "support.function.misc.scss"
+      ],
+      "settings": {
+        "foreground": "#7AA2F7",
+        "fontStyle": "italic"
+      }
+    },
+    // --- SCSS: INTERPOLATION #{} ---
+    {
+      "name": "SCSS Interpolation Delimiters (#{ and })",
+      "scope": [
+        "punctuation.definition.interpolation.begin.bracket.curly.scss",
+        "punctuation.definition.interpolation.end.bracket.curly.scss",
+        "punctuation.section.interpolation.begin.scss",
+        "punctuation.section.interpolation.end.scss"
+      ],
+      "settings": {
+        "foreground": "#F7768E",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "SCSS Variable inside Interpolation",
+      "scope": [
+        "variable.interpolation.scss"
+      ],
+      "settings": {
+        "foreground": "#E0AFAF"
+      }
+    },
+    // --- SCSS: PLACEHOLDER SELECTORS ---
+    {
+      "name": "SCSS Placeholder Selectors (%placeholder)",
+      "scope": [
+        "entity.other.attribute-name.placeholder.css",
+        "entity.other.attribute-name.placeholder.scss"
+      ],
+      "settings": {
+        "foreground": "#FFB347",
+        "fontStyle": "bold"
+      }
+    },
     // --- OPERATORS ---
     {
       "name": "Comparison Operators (==, ===, !=, !==, >, <, >=, <=)",
@@ -387,12 +536,14 @@
       }
     },
     {
-      "name": "Object Properties & CSS Variables",
+      "name": "Object Properties & CSS/SCSS Properties",
       "scope": [
         "variable.other.property",
         "variable.other.object.property",
         "support.type.property-name.css",
+        "support.type.property-name.scss",
         "entity.other.attribute-name.variable.css",
+        "entity.other.attribute-name.variable.scss",
         "meta.property.object.js",
         "variable.other.property.js"
       ],
@@ -472,22 +623,29 @@
       }
     },
     {
-      "name": "CSS Values & Numbers",
+      "name": "CSS/SCSS Values & Numbers",
       "scope": [
         "constant.numeric",
         "support.constant.property-value.css",
+        "support.constant.property-value.scss",
         "support.constant.color.w3c-standard-color-name.css",
-        "variable.parameter.url.css"
+        "support.constant.color.w3c-standard-color-name.scss",
+        "variable.parameter.url.css",
+        "variable.parameter.url.scss"
       ],
       "settings": {
         "foreground": "#FF9E64"
       }
     },
     {
-      "name": "CSS IDs & Classes",
+      "name": "CSS/SCSS IDs & Classes",
       "scope": [
         "entity.other.attribute-name.id",
-        "entity.other.attribute-name.class"
+        "entity.other.attribute-name.id.css",
+        "entity.other.attribute-name.id.scss",
+        "entity.other.attribute-name.class",
+        "entity.other.attribute-name.class.css",
+        "entity.other.attribute-name.class.scss"
       ],
       "settings": {
         "foreground": "#FF9E64",
