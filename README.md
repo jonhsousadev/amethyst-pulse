@@ -2,13 +2,13 @@
 
 **Amethyst Pulse** is a premium theme for Visual Studio Code, designed to provide a deep, technological, and above all, comfortable programming experience.
 
-Inspired by the clarity of gemstones and the concept of *High-Contrast Softness*, this theme replaces harsh contrasts with a balanced palette of **Amethyst Purple**, **Amber Orange**, and **Pulse Cream**.
+Inspired by the clarity of gemstones and the concept of *High-Contrast Softness*, this theme now ships in two versions: **Classic** for the original deeper look and **Soft** for a clearer background with gentler contrast.
 
 ---
 
 ## ✨ Highlights
 
-* 👁️ **Optimized for Astigmatism:** Deep purple background (not pure black) and cream-toned text to reduce the "halo" effect and eye strain.
+* 👁️ **Optimized for Astigmatism:** Two dark variants so you can choose between deeper contrast and a lighter background that feels less heavy.
 * ⚡ **Logical Hierarchy:** Reserved words (`if`, `else`, `return`, `for`, `while`) in vibrant orange for instant flow identification.
 * 💎 **Amethyst Aesthetics:** Consistent interface, from vibrant badges to subtle indentation guides.
 * 🎨 **Web Development Focus:** Refined syntax for HTML, CSS, JavaScript, and TypeScript.
@@ -36,7 +36,7 @@ Inspired by the clarity of gemstones and the concept of *High-Contrast Softness*
    * **macOS / Linux:** `~/.vscode/extensions`
 3. Copy the `amethyst-pulse` folder into this directory.
 4. Restart VS Code.
-5. Press `Ctrl + K` + `Ctrl + T` and select **Amethyst Pulse**.
+5. Press `Ctrl + K` + `Ctrl + T` and select **Amethyst Pulse Classic** or **Amethyst Pulse Soft**.
 
 ### Option 2: Via Marketplace
 
@@ -71,7 +71,8 @@ Inspired by the clarity of gemstones and the concept of *High-Contrast Softness*
 
 | **Element** | **Color** | **Hex** |
 | :--- | :--- | :--- |
-| **Background** | Deep Amethyst | `#1e1a24` |
+| **Classic Background** | Deep Amethyst | `#1e1a24` |
+| **Soft Background** | Lighter Amethyst | `#2b2735` |
 | **Foreground** | Soft Cream | `#eee8d5` |
 | **Keywords** | Electric Purple | `#bb9af7` |
 | **Logic/Flow** | Amber Pulse | `#ff9e64` |

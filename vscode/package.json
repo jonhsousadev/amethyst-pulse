@@ -1,8 +1,8 @@
 {
   "name": "amethyst-pulse",
   "displayName": "Amethyst Pulse",
-  "description": "An elegant dark theme in purple, cream and orange tones, optimized for users with astigmatism.",
-  "version": "1.0.17",
+  "description": "An elegant VS Code theme with classic and soft dark variants in purple, cream and orange tones.",
+  "version": "1.0.18",
   "publisher": "JonhSousa",
   "engines": {
     "vscode": "^1.50.0"
@@ -15,14 +15,21 @@
     "dark",
     "astigmatism",
     "amethyst",
-    "soft contrast"
+    "soft contrast",
+    "classic",
+    "soft"
   ],
   "contributes": {
     "themes": [
       {
-        "label": "Amethyst Pulse",
+        "label": "Amethyst Pulse Classic",
         "uiTheme": "vs-dark",
         "path": "./themes/Amethyst-Pulse-color-theme.json"
+      },
+      {
+        "label": "Amethyst Pulse Soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Amethyst-Pulse-soft-color-theme.json"
       }
     ]
   },
