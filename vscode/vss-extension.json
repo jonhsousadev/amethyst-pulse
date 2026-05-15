@@ -74,5 +74,19 @@
             "path": "icon.png",
             "addressable": true
         }
-    ]
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Amethyst Pulse HC",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Amethyst-Pulse-HC-color-theme.json"
+            },
+            {
+                "label": "Amethyst Pulse Light",
+                "uiTheme": "vs",
+                "path": "./themes/Amethyst-Pulse-Light-color-theme.json"
+            }
+        ]
+    }
 }

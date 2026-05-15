@@ -2,7 +2,7 @@
   "name": "amethyst-pulse",
   "displayName": "Amethyst Pulse",
   "description": "An elegant VS Code theme with classic and soft dark variants in purple, cream and orange tones.",
-  "version": "1.0.18",
+  "version": "1.1.1",
   "publisher": "JonhSousa",
   "engines": {
     "vscode": "^1.50.0"
@@ -30,6 +30,11 @@
         "label": "Amethyst Pulse Soft",
         "uiTheme": "vs-dark",
         "path": "./themes/Amethyst-Pulse-soft-color-theme.json"
+      },
+      {
+        "label": "Amethyst Pulse HC",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Amethyst-Pulse-HC-color-theme.json"
       }
     ]
   },
