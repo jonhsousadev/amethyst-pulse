@@ -2,13 +2,13 @@
 
 **Amethyst Pulse** is a premium theme for Visual Studio Code, designed to provide a deep, technological, and above all, comfortable programming experience.
 
-Inspired by the clarity of gemstones and the concept of *High-Contrast Softness*, this theme now ships in two versions: **Classic** for the original deeper look and **Soft** for a clearer background with gentler contrast.
+Inspired by the clarity of gemstones and the concept of *High-Contrast Softness*, this theme ships in five versions: **Classic** for the original deeper look, **Soft** for a clearer background with gentler contrast, **HC** for maximum contrast, **Light** for bright environments, and **Kanagawa** for a pastel, Japanese-ink inspired aesthetic.
 
 ---
 
 ## ✨ Highlights
 
-* 👁️ **Optimized for Astigmatism:** Two dark variants so you can choose between deeper contrast and a lighter background that feels less heavy.
+* 👁️ **Optimized for Astigmatism:** Multiple dark variants so you can choose between deeper contrast and a lighter background that feels less heavy.
 * ⚡ **Logical Hierarchy:** Reserved words (`if`, `else`, `return`, `for`, `while`) in vibrant orange for instant flow identification.
 * 💎 **Amethyst Aesthetics:** Consistent interface, from vibrant badges to subtle indentation guides.
 * 🎨 **Web Development Focus:** Refined syntax for HTML, CSS, JavaScript, and TypeScript.
@@ -36,7 +36,7 @@ Inspired by the clarity of gemstones and the concept of *High-Contrast Softness*
    * **macOS / Linux:** `~/.vscode/extensions`
 3. Copy the `amethyst-pulse` folder into this directory.
 4. Restart VS Code.
-5. Press `Ctrl + K` + `Ctrl + T` and select **Amethyst Pulse Classic** or **Amethyst Pulse Soft**.
+5. Press `Ctrl + K` + `Ctrl + T` and select one of the variants: **Classic**, **Soft**, **HC**, **Light**, or **Kanagawa**.
 
 ### Option 2: Via Marketplace
 
@@ -69,6 +69,8 @@ Inspired by the clarity of gemstones and the concept of *High-Contrast Softness*
 
 ## 🎨 Color Palette
 
+### Classic / Soft / HC
+
 | **Element** | **Color** | **Hex** |
 | :--- | :--- | :--- |
 | **Classic Background** | Deep Amethyst | `#1e1a24` |
@@ -77,6 +79,19 @@ Inspired by the clarity of gemstones and the concept of *High-Contrast Softness*
 | **Keywords** | Electric Purple | `#bb9af7` |
 | **Logic/Flow** | Amber Pulse | `#ff9e64` |
 | **Functions** | Sky Blue | `#7aa2f7` |
+
+### Kanagawa
+
+| **Element** | **Color** | **Hex** |
+| :--- | :--- | :--- |
+| **Background** | Sumi Ink | `#181820` |
+| **Sidebar** | Sumi Ink Dark | `#16161d` |
+| **Foreground** | Fuji White | `#dcd7ba` |
+| **Keywords** | Oni Violet | `#957fb8` |
+| **Functions** | Crystal Blue | `#7e9cd8` |
+| **Strings** | Spring Green | `#98bb6c` |
+| **Identifiers** | Carp Yellow | `#e6c384` |
+| **Numbers** | Sakura Pink | `#d27e99` |
 
 ---
 

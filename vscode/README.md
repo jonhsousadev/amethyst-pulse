@@ -2,11 +2,13 @@
 
 Amethyst Pulse is a VS Code theme pack focused on readable contrast, clear syntax hierarchy, and a consistent purple/cream/orange visual identity.
 
-This extension currently includes three variants:
+This extension includes five variants:
 
 - Amethyst Pulse Classic
 - Amethyst Pulse Soft
 - Amethyst Pulse HC
+- Amethyst Pulse Light
+- Amethyst Pulse Kanagawa
 
 ## Theme Variants
 
@@ -25,12 +27,25 @@ This extension currently includes three variants:
 - True black background for maximum contrast.
 - Best for users who want sharper separation between foreground and background.
 
+### Amethyst Pulse Light
+
+- Light theme variant for daytime or bright environments.
+- Inverted color scheme with warm cream backgrounds.
+
+### Amethyst Pulse Kanagawa
+
+- Inspired by the Kanagawa palette (ukiyo-e and *The Great Wave*).
+- Warm sumi-ink backgrounds with pastel, organic colors.
+- Softer, desaturated tones while maintaining WCAG AA contrast.
+- Uses oniViolet for keywords, crystalBlue for functions, springGreen for strings, and carpYellow for identifiers.
+
 ## Design Characteristics
 
 - Keywords and flow control are highlighted with warm orange accents.
 - Primary syntax groups use amethyst and cool blue tones.
 - Foreground text uses a soft cream color for readability.
 - UI tokens (selection, borders, guides, badges) follow the same palette for consistency.
+- The Kanagawa variant uses the traditional Japanese palette for a calmer, more organic feel.
 
 ## Installation
 
@@ -56,6 +71,8 @@ https://marketplace.visualstudio.com/items?itemName=JonhSousa.amethyst-pulse
    - Amethyst Pulse Classic
    - Amethyst Pulse Soft
    - Amethyst Pulse HC
+   - Amethyst Pulse Light
+   - Amethyst Pulse Kanagawa
 
 ## Recommended Fonts
 
@@ -70,6 +87,8 @@ For best visual results, use a programming font with ligatures, such as:
 - `themes/Amethyst-Pulse-color-theme.json` (Classic)
 - `themes/Amethyst-Pulse-soft-color-theme.json` (Soft)
 - `themes/Amethyst-Pulse-HC-color-theme.json` (HC)
+- `themes/Amethyst-Pulse-Light-color-theme.json` (Light)
+- `themes/Amethyst-Pulse-Kanagawa-color-theme.json` (Kanagawa)
 
 ## Contributing
 

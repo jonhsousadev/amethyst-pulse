@@ -18,6 +18,7 @@
     "tags": [
         "purple",
         "dark",
+        "light",
         "astigmatism",
         "amethyst",
         "accessible"
@@ -68,6 +69,10 @@
     "files": [
         {
             "path": "themes/Amethyst-Pulse-color-theme.json",
+            "addressable": true
+        },
+        {
+            "path": "themes/Amethyst-Pulse-Light-color-theme.json",
             "addressable": true
         },
         {
