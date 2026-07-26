@@ -2,7 +2,7 @@
   "name": "amethyst-pulse",
   "displayName": "Amethyst Pulse",
   "description": "An elegant VS Code theme with classic, soft, HC and light variants in purple, cream and orange tones.",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "publisher": "JonhSousa",
   "engines": {
     "vscode": "^1.50.0"
@@ -23,7 +23,9 @@
     "kanagawa",
     "japanese",
     "pastel",
-    "ukiyo-e"
+    "ukiyo-e",
+    "monokai",
+    "accessible"
   ],
   "contributes": {
     "themes": [
@@ -51,6 +53,26 @@
         "label": "Amethyst Pulse Kanagawa",
         "uiTheme": "vs-dark",
         "path": "./themes/Amethyst-Pulse-Kanagawa-color-theme.json"
+      },
+      {
+        "label": "Amethyst Pulse Ocean Wave",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Amethyst-Pulse-Ocean-Wave-color-theme.json"
+      },
+      {
+        "label": "Amethyst Pulse Monokai",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Amethyst-Pulse-Monokai-color-theme.json"
+      },
+      {
+        "label": "Amethyst Pulse Kanagawa Accessible",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Amethyst-Pulse-Kanagawa-Accessible-color-theme.json"
+      },
+      {
+        "label": "Amethyst Pulse Monokai Accessible",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Amethyst-Pulse-Monokai-Accessible-color-theme.json"
       }
     ]
   },
